@@ -1,4 +1,5 @@
 import random
+import os
 
 empate = 0
 vitoria_jogador = 0
@@ -13,6 +14,7 @@ while True:
     quantidade_partidas = int(input('Quantas partidas você vai jogar: '))
     
     for partida in range(quantidade_partidas):
+        os.system('cls')
         print('======= {}° PARTIDA ======'.format(partida + 1))
         print('1 - PEDRA')
         print('2 - PAPEL')
